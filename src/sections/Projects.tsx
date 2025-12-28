@@ -57,7 +57,7 @@ export const ProjectsSection = () => {
         <h2 className="font-serif  text-3xl md:text-5xl text-center mt-6">
           Featured Projects
         </h2>
-        <p className="text-center md:text-lg text-white/60 mt-4 max-w-md mx-auto">
+        <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
           You can see my concepts into digital experience
         </p>
         <div className=" flex flex-col mt-10 gap-20 md:mt-20">
