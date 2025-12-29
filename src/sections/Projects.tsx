@@ -17,6 +17,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "https://youtu.be/4k7IdSLxh6w",
+
     image: darkSaasLandingPage,
   },
   {
@@ -66,38 +67,46 @@ export const ProjectsSection = () => {
               key={project.title}
               className="bg-gray-800 rounded-3xl relative z-0 after:z-10 overflow-hidden after:content-[''] 
               after:absolute after:inset-0 after:outline after:-outline-offset-2 after:rounded-3xl
-               after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 after:pointer-events-none "
+               after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10  lg:px-20 lg:pt-16 after:pointer-events-none "
             >
               <div
                 className="absolute inset-0 -z-10 opacity-5"
                 style={{ backgroundImage: `url(${grainImage.src})` }}
               ></div>
-              <div className=" bg-gradient-to-r from-emerald-300 to-sky-400   inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
-                <span>{project.company}</span>
-                {<span>&bull;</span>}
-                <span>{project.year}</span>
+              <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+                <div className="lg:pb-10">
+                  <div className=" bg-gradient-to-r from-emerald-300 to-sky-400   inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                    <span>{project.company}</span>
+                    {<span>&bull;</span>}
+                    <span>{project.year}</span>
+                  </div>
+                  <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
+                    {project.title}
+                  </h3>
+                  <hr className="border-t-2 border-white/5 mt-4 md:mt-5 " />
+                  <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                    {project.results.map((result) => (
+                      <li className="flex gap-2 text-sm text-white/50 md:text-base">
+                        <CheckCircleIcon className="size-5 md:size-6" />
+                        <span>{result.title}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a href={project.link}>
+                    <button className="bg-white md:w-auto px-6 text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                      <ArrowUpRightIcon className="size-4" />
+                      <span>View Live Site</span>
+                    </button>
+                  </a>
+                </div>
+                <div>    
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                  />
+                </div>
               </div>
-              <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
-              <hr className="border-t-2 border-white/5 mt-4 md:mt-5 " />
-              <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                {project.results.map((result) => (
-                  <li className="flex gap-2 text-sm text-white/50 md:text-base">
-                    <CheckCircleIcon className="size-5 md:size-6" />
-                    <span>{result.title}</span>
-                  </li>
-                ))}
-              </ul>
-              <a href={project.link}>
-                <button className="bg-white md:w-auto px-6 text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                  <ArrowUpRightIcon className="size-4" />
-                  <span>View Live Site</span>
-                </button>
-              </a>
-              <Image
-                src={project.image}
-                alt={project.title}
-                className="mt-8 -mb-4 md:-mb-0 "
-              />
             </div>
           ))}
         </div>
