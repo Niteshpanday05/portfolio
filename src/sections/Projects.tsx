@@ -51,8 +51,12 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-16">
       <div className="container">
-        <SectionHeader eyebrow="Real WOrld Results" title="  Featured Projects" description=" You can see my concepts into digital experience" />
-        
+        <SectionHeader
+          eyebrow="Real WOrld Results"
+          title="  Featured Projects"
+          description=" You can see my concepts into digital experience"
+        />
+
         <div className=" flex flex-col mt-10 gap-20 md:mt-20">
           {portfolioProjects.map((project) => (
             <div
@@ -91,7 +95,7 @@ export const ProjectsSection = () => {
                     </button>
                   </a>
                 </div>
-                <div>    
+                <div>
                   <Image
                     src={project.image}
                     alt={project.title}
