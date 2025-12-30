@@ -11,6 +11,7 @@ import GithubIcon from "@/assets/icons/github.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import { TechIcon } from "@/components/TechIcon";
 import mapImage from "@/assets/images/map.png";
+import smileMemoji from '@/assets/images/memoji-smile.png';
 
 const toolboxItems = [
   {
@@ -36,6 +37,33 @@ const toolboxItems = [
   {
     title: "Github",
     iconType: GithubIcon,
+  },
+];
+
+const hobbies = [
+  {
+    title:'Painting',
+    emoji:'🎨'
+  },
+   {
+    title:'Camera',
+    emoji:'📷'
+  },
+   {
+    title:'Footbal',
+    emoji:'⚽'
+  },
+   {
+    title:'Reading',
+    emoji:'📖'
+  },
+  {
+    title:'Watching',
+    emoji:'🎬'
+  },
+  {
+    title:'Learning',
+    emoji:'🏫'
   },
 ];
 
@@ -83,6 +111,7 @@ export const AboutSection = () => {
         </Card>
         <Card>
           <Image src={mapImage} alt="map" />
+          <Image src={smileMemoji} alt="smiling memoji" />
         </Card>
       </div>
     </div>
