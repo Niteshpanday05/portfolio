@@ -13,6 +13,7 @@ import { TechIcon } from "@/components/TechIcon";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
+import { ToolboxItems } from "@/components/ToolboxItems";
 
 const toolboxItems = [
   {
@@ -87,25 +88,21 @@ export const AboutSection = () => {
               <Image src={bookImage} alt="Book Cover" className="" />
             </div>
           </Card>
-          <Card>
+          <Card className="h-[320px]">
             <CardHeader
               title=" MyToolbox"
               description=" Explore the technologies and tools I use to create digital
                 experience"
+                className="px-6 pt-6"
             />
-            <div>
-              {toolboxItems.map((item) => (
-                <div key={item.title}>
-                  <TechIcon component={item.iconType} />
-                  <span>{item.title}</span>
-                </div>
-              ))}
-            </div>
+           <ToolboxItems items = {toolboxItems} className="mt-6"/>
+           <ToolboxItems items = {toolboxItems} className="mt-6"/>
           </Card>
           <Card>
-            <CardHeader
+            <CardHeader 
               title="Beyond the code"
               description=" Explore my interest and hobbies beyond the digital worl"
+              
             />
 
             <div>
