@@ -88,7 +88,7 @@ export const AboutSection = () => {
               <Image src={bookImage} alt="Book Cover" className="" />
             </div>
           </Card>
-          <Card className="h-[320px]">
+          <Card className="h-[320px] p-0">
             <CardHeader
               title=" MyToolbox"
               description=" Explore the technologies and tools I use to create digital
