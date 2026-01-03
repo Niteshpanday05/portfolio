@@ -8,7 +8,7 @@ const footerLinks = [
   },
   {
     title: "GitHub",
-    href: "/github",
+    url: "https://github.com/your-username",
   },
 
   {
@@ -35,14 +35,15 @@ export const Footer = () => {
           </p>
           <nav className="flex flex-col md:flex-row items-center gap-8">
             {footerLinks.map((link) => (
-              <Link
-                href={link.href}
+              <a
                 key={link.title}
-                className="inline-flex items-center gap-1.5"
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 hover:text-gray-400"
               >
-                <span>{link.title}</span>
-               {/*  <ArrowUpRightIcon className="size-4" /> */}
-              </Link>
+                {link.title}
+              </a>
             ))}
           </nav>
         </div>
