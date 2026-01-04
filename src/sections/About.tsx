@@ -16,6 +16,8 @@ import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import {motion} from 'framer-motion';
 import { useRef } from "react";
+import { RiNextjsFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
 
 const toolboxItems = [
   {
@@ -23,8 +25,12 @@ const toolboxItems = [
     iconType: JavascriptIcon,
   },
   {
-    title: "Chrome",
-    iconType: ChromeIcon,
+    title: "Nextjs",
+    iconType: RiNextjsFill,
+  },
+   {
+    title: "Typescripts",
+    iconType: BiLogoTypescript,
   },
   {
     title: "HTML",
@@ -50,6 +56,12 @@ const hobbies = [
     emoji: "🎨",
     left: "5%",
     top: "5%",
+  },
+   {
+    title: "Painting",
+    emoji: "🎨",
+    left: "40%",
+    top: "10%",
   },
   {
     title: "Camera",

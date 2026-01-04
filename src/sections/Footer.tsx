@@ -4,22 +4,6 @@ import { FaGithub, FaLinkedin} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
 
-/* 
-const footerLinks = [
-  {
-    title: "Email",
-    href: "/email",
-  },
-  {
-    title: "GitHub",
-    url: "https://github.com/your-username",
-  },
-
-  {
-    title: "LinkedIn",
-    href: "/linkedin",
-  },
-]; */
 
 const socialLinks = [
   {
@@ -56,11 +40,11 @@ export const Footer = () => {
       </div>
 
       <div className="container">
-        <div className="border-t border-white/60 py-8 text-sm flex flex-col md:flex-row md:justify-between items-center gap-8">
+        <div className="border-t border-white/60 py-8 text-sm flex flex-col md:flex-col md:justify-between items-center gap-6">
           <p className="text-white/60">
             © {new Date().getFullYear()} Nitesh Panday. All rights reserved.
           </p>
-          <nav className="flex flex-row md:flex-row items-center gap-3">
+          <nav className="flex flex-col md:flex-row items-center gap-3">
             {socialLinks.map(({ title, url, icon: Icon }) => (
               <a
                 key={title}
@@ -68,7 +52,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={title}
-                className=" z-50 inline-flex items-center text-gray-200 hover:text-emerald-400 transition hover:scale-110"
+                className=" z-50 inline-flex items-center text-gray-200 hover:text-emerald-600 transition hover:scale-110"
               >
                 <Icon className="size-4" />
               </a>
