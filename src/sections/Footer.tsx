@@ -1,6 +1,8 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { TfiEmail } from "react-icons/tfi";
 
 /* 
 const footerLinks = [
@@ -22,7 +24,7 @@ const footerLinks = [
 const socialLinks = [
   {
     title: "GitHub",
-    url: "https://github.com/your-username",
+    url: "https://github.com/Niteshpanday05",
     icon: FaGithub,
   },
   {
@@ -30,16 +32,21 @@ const socialLinks = [
     url: "https://linkedin.com/in/your-username",
     icon: FaLinkedin,
   },
+   {
+    title: "LinkedIn",
+    url: "https://linkedin.com/in/your-username",
+    icon: TfiEmail ,
+  },
   {
     title: "Twitter",
     url: "https://twitter.com/your-username",
-    icon: FaTwitter,
+    icon: FaXTwitter,
   },
 ];
 
 export const Footer = () => {
   return (
-    <footer className="relative pb-28 -z-10 overflow-x-clip">
+    <footer className="relative pb-20  overflow-x-clip">
       <div
         className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 
       -translate-x-1/2 bg-emerald-300/30
@@ -49,11 +56,11 @@ export const Footer = () => {
       </div>
 
       <div className="container">
-        <div className="border-t border-white/15 py-8 text-sm flex flex-col md:flex-row md:justify-between items-center gap-8">
+        <div className="border-t border-white/60 py-8 text-sm flex flex-col md:flex-row md:justify-between items-center gap-8">
           <p className="text-white/60">
             © {new Date().getFullYear()} Nitesh Panday. All rights reserved.
           </p>
-          <nav className="flex flex-col md:flex-row items-center gap-8">
+          <nav className="flex flex-row md:flex-row items-center gap-3">
             {socialLinks.map(({ title, url, icon: Icon }) => (
               <a
                 key={title}
@@ -61,9 +68,9 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={title}
-                className="text-3xl text-gray-600 hover:text-emerald-400 transition-transform transform hover:scale-110"
+                className=" z-50 inline-flex items-center text-gray-200 hover:text-emerald-400 transition hover:scale-110"
               >
-                <Icon />
+                <Icon className="size-4" />
               </a>
             ))}
           </nav>
