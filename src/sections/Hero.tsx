@@ -8,7 +8,7 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 
 export const HeroSection = () => {
   return (
-    <div className="py-24 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div className="py-28 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -76,12 +76,13 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl  md:text-5xl text-center mt-8 tracking-wide">
-            Building Exceptional User Experience
+          <h1 className="font-serif text-2xl  md:text-5xl text-center mt-8 tracking-wide">
+            Building Exceptional 
           </h1>
-          <p className="mt-4 text-center text-white/60 md:text-lg">
+          <h1 className="font-serif mt-3 text-2xl  md:text-5xl text-center  tracking-wide">User Experience</h1>
+          <p className="mt-4 text-center font-sans text-white/60 md:text-lg">
             I specialize in transforming design into functional,
-            high-performancing web application. Let's discuss your nextproject.
+            high-performancing web application. Let's discuss your next project.
           </p>
         </div>
 

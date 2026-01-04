@@ -10,7 +10,7 @@ import { ContactSection } from "@/sections/Contact";
 export default function Home() {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <HeroSection />
       <ProjectsSection />
       <TapeSection />

@@ -31,7 +31,7 @@ export default function RootLayout({
           "bg-gray-900 text-white antialiased font-sans"
         )}
       >
-        <Header />
+        {/* <Header /> */}
         {children}
       </body>
     </html>

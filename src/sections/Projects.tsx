@@ -10,9 +10,9 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
+    company: "Sajiloorder.com",
     year: "2022",
-    title: "Dark Saas Landing Page",
+    title: "Sajilo Order",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
@@ -23,9 +23,9 @@ const portfolioProjects = [
     image: darkSaasLandingPage,
   },
   {
-    company: "Innovative Co",
+    company: "NOZEELA",
     year: "2021",
-    title: "Light Saas Landing Page",
+    title: "Ecommerce WebApp",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
@@ -35,9 +35,9 @@ const portfolioProjects = [
     image: lightSaasLandingPage,
   },
   {
-    company: "Quantum Dynamics",
+    company: "Balmeeki School",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "School Management System",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
