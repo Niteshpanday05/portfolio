@@ -8,7 +8,7 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 
 export const HeroSection = () => {
   return (
-    <div className="py-28 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div className="py-28 md:py-30 lg:py-36 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -16,10 +16,10 @@ export const HeroSection = () => {
             backgroundImage: `url(${grainImage.src})`,
           }}
         ></div>
-        <div className=" size-[620px] hero-ring"></div>
-        <div className=" size-[820px] hero-ring"></div>
-        <div className=" size-[1020px] hero-ring"></div>
-        <div className=" size-[1220px] hero-ring"></div>
+        <div className=" size-[640px] hero-ring"></div>
+        <div className=" size-[760px] hero-ring"></div>
+        <div className=" size-[860px] hero-ring"></div>
+        <div className=" size-[960px] hero-ring"></div>
 
         {/* STAR ICON */}
 
@@ -82,7 +82,7 @@ export const HeroSection = () => {
           <h1 className="font-serif mt-3 text-2xl  md:text-5xl text-center  tracking-wide">User Experience</h1>
           <p className="mt-4 text-center font-sans text-white/60 md:text-lg">
             I specialize in transforming design into functional,
-            high-performancing web application. Let's discuss your next project.
+            high-performancing web application. Let discuss your next project.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export const HeroSection = () => {
           </button>
           <button className="inline-flex items-center gap-2 bg-white border border-white text-gray-900 h-12 px-6 rounded-xl">
             <span className="">👋</span>
-            <span className="font-semibold">Let's Connect</span>
+            <span className="font-semibold">Let Connect</span>
           </button>
         </div>
       </div>
