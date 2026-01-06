@@ -38,29 +38,29 @@ export default function ContactForm() {
     } finally {
       setLoading(false);
     }
+    setTimeout(() => setSuccess(null), 4000);
   };
   return (
     <section
       id="contact"
-      className="relative overflow-hidden py-20 px-4 bg-gray-900 text-white"
+      className="relative overflow-hidden py-12 px-4 bg-gray-900 text-white"
     >
       {/* Decorative Gradients */}
-      <div className="absolute -top-32 -left-32 h-96 w-96 -z-10 rounded-full bg-emerald-500/20 blur-3xl" />
+      <div className="absolute -top-32-black/60 -left-32 h-96 w-96 -z-10 rounded-full bg-emerald-500/20 blur-3xl" />
       <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-indigo-500/20 blur-3xl" />
 
-      <div className="relative max-w-6xl mx-auto">
+      <div className="relative max-w-5xl mx-auto">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-14"
         >
-          <h2 className="mt-6 text-4xl md:text-6xl font-extrabold tracking-tight">
+          <h2 className="mt-2 text-2xl md:text-3xl font-extrabold tracking-tight">
             <div>
-              <span className="text-bg-gradient-to-r from-emerald-300 to-sky-400 ">
-                {" "}
+              <span className="bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent">
                 Get In Touch
               </span>
             </div>
@@ -71,36 +71,38 @@ export default function ContactForm() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-stretch">
+        <div className="grid md:grid-cols-2 gap-20 items-stretch">
           {/* Info Card */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="relative rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur-xl"
+            className="relative rounded-2xl border border-emerald-100 bg-white/5 p-10 backdrop-blur-xl"
           >
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-            <p className="text-neutral-400 mb-10">
+            <h3 className="text-2xl flex items-center justify-center font-semibold mb-4">
+              Contact Information
+            </h3>
+            <p className="text-neutral-400 mb-8">
               Prefer direct communication? Reach out via email or phone and I’ll
               respond as soon as possible.
             </p>
 
-            <div className="space-y-6 text-neutral-300">
+            <div className="space-y-3 text-neutral-300">
               <div className="flex items-center gap-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
+                <span className="flex h-10 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
                   <Mail />
                 </span>
                 <span>developer.nitesh5@gmail.com</span>
               </div>
               <div className="flex items-center gap-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
+                <span className="flex h-10 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
                   <Phone />
                 </span>
                 <span>+977 9702003949</span>
               </div>
               <div className="flex items-center gap-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
+                <span className="flex h-10 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
                   <MapPin />
                 </span>
                 <span>Nepal</span>
@@ -115,10 +117,10 @@ export default function ContactForm() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-10 backdrop-blur-xl"
+            className="relative rounded-3xl border border-emerald-100 bg-gradient-to-br from-white/10 to-white/5 p-10 backdrop-blur-xl"
           >
-            <div className="grid gap-6">
-              <h3 className="text-2xl font-semibold text-white mb-4">
+            <div className="grid gap-5">
+              <h3 className="text-2xl font-semibold flex justify-center text-white p-2 mb-2">
                 Contact Me
               </h3>
 
@@ -128,7 +130,7 @@ export default function ContactForm() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="w-full rounded-xl bg-white/90 border border-white/10 px-4 py-3 text-black placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                className="w-full rounded-xl bg-white/90 border border-white/10 px-4 py-2 text-black placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-emerald-400"
               />
 
               <input
@@ -137,7 +139,7 @@ export default function ContactForm() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full rounded-xl bg-white/90 border border-white/10 px-4 py-3 text-black placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                className="w-full rounded-xl bg-white/90 border border-white/10 px-4 py-2 text-black placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-emerald-400"
               />
 
               <textarea
@@ -146,21 +148,32 @@ export default function ContactForm() {
                 onChange={(e) => setMessage(e.target.value)}
                 required
                 rows={5}
-                className="w-full rounded-xl bg-white/90 border border-white/10 px-4 py-3 text-black font-lg placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                className="w-full rounded-xl bg-white/90 border border-white/10 px-4 py-2 text-black font-lg placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-emerald-400"
               ></textarea>
 
               <button
                 type="submit"
                 disabled={loading}
-                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl  bg-gradient-to-r from-emerald-300 to-sky-400  px-6 py-3 font-semibold text-black transition-all hover:bg-emerald-600"
+                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl  bg-gradient-to-r from-emerald-300 to-sky-400  px-4 py-2 font-semibold text-black transition-all hover:bg-emerald-600"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>
-
-              {success && <p className="text-green-400 mt-2">{success}</p>}
             </div>
           </motion.form>
         </div>
+        {success && (
+          <div
+            className={`fixed top-5 left-1/2 -translate-x-1/2 z-[9999]
+                px-6 py-3 rounded-lg shadow-lg font-medium
+              ${
+                success.includes("Failed")
+                  ? "bg-red-500 text-white"
+                  : "bg-emerald-500 text-black"
+              }`}
+          >
+            {success}
+          </div>
+        )}
       </div>
     </section>
   );

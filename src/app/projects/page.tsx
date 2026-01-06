@@ -82,7 +82,7 @@ export default function ProjectsResponsive() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
             My Projects
           </h2>
           <p className="mt-4 text-neutral-400 max-w-xl mx-auto">
