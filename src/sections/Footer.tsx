@@ -41,7 +41,7 @@ export const Footer = () => {
 
       <div className="container">
         <div className="border-t border-white/60 py-8 text-sm flex flex-col md:flex-col md:justify-between items-center gap-6">
-          <p className="text-white/60">
+          <p className="text-white/60 ">
             © {new Date().getFullYear()} Nitesh Panday. All rights reserved.
           </p>
           <nav className="flex flex-col md:flex-row items-center gap-3">
