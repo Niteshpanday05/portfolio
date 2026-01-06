@@ -7,57 +7,72 @@ import { Github, ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "Portfolio Website",
-    description:
-      "A modern developer portfolio built with Next.js, Tailwind CSS, and Framer Motion.",
+    description: "Modern developer portfolio with animations and clean UI.",
     tech: ["Next.js", "Tailwind", "Framer Motion"],
     github: "https://github.com/yourusername/portfolio",
     live: "https://yourportfolio.vercel.app",
-    image: "/coding.jpg", // put the image in /public/projects
+    image: "/projects/profile.jpeg",
   },
   {
     title: "E-commerce Store",
-    description:
-      "Full-stack e-commerce app with authentication, cart, and checkout flow.",
+    description: "Full-stack online store with cart, auth, and checkout.",
     tech: ["Next.js", "Redux", "Stripe"],
     github: "https://github.com/yourusername/ecommerce",
     live: "#",
-    image: "/profile.jpeg",
+    image: "/projects/profile.jpeg",
   },
   {
     title: "Dashboard UI",
-    description:
-      "Responsive admin dashboard with charts and reusable components.",
+    description: "Responsive admin dashboard with charts and reusable components.",
     tech: ["Next.js", "Tailwind", "Recharts"],
     github: "https://github.com/yourusername/dashboard",
     live: "#",
-    image: "/profile.jpeg",
+    image: "/projects/profile.jpeg",
   },
   {
     title: "Dashboard UI",
-    description:
-      "Responsive admin dashboard with charts and reusable components.",
+    description: "Responsive admin dashboard with charts and reusable components.",
     tech: ["Next.js", "Tailwind", "Recharts"],
     github: "https://github.com/yourusername/dashboard",
     live: "#",
-    image: "/profile.jpeg",
+    image: "/projects/profile.jpeg",
   },
   {
     title: "Dashboard UI",
-    description:
-      "Responsive admin dashboard with charts and reusable components.",
+    description: "Responsive admin dashboard with charts and reusable components.",
     tech: ["Next.js", "Tailwind", "Recharts"],
     github: "https://github.com/yourusername/dashboard",
     live: "#",
-    image: "/profile.jpeg",
+    image: "/projects/profile.jpeg",
+  },
+  {
+    title: "Dashboard UI",
+    description: "Responsive admin dashboard with charts and reusable components.",
+    tech: ["Next.js", "Tailwind", "Recharts"],
+    github: "https://github.com/yourusername/dashboard",
+    live: "#",
+    image: "/projects/profile.jpeg",
   },
 ];
 
-export default function ProjectsSection() {
+/* ---------------- Animations ---------------- */
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.2 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 80, damping: 20 },
+  },
+};
+
+export default function ProjectsResponsive() {
   return (
-    <section
-      id="projects"
-      className="relative py-24 bg-gray-900"
-    >
+    <section id="projects" className="py-24 gap-6 bg-gray-800">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <motion.div
@@ -68,85 +83,72 @@ export default function ProjectsSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-            Featured Projects
+            My Projects
           </h2>
           <p className="mt-4 text-neutral-400 max-w-xl mx-auto">
-            Some of the projects I’ve built to showcase my skills and experience.
+            A showcase of my work with clean UI and smooth animations.
           </p>
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, i) => (
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="grid gap-14 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        >
+          {projects.map((project) => (
             <motion.div
               key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="group relative rounded-2xl border border-white/5 bg-white backdrop-blur-lg  transition overflow-hidden"
+              variants={item}
+              className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow cursor-pointer"
             >
               {/* Project Image */}
-              {project.image && (
-                <div className="relative h-48 w-full">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              )}
-
-              {/* Card Content */}
-              <div className="p-6">
-                <h3 className="text-xl  bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-                  {project.title}
-                </h3>
-
-                <p className="mt-3 text-sm text-neutral-800">
-                  {project.description}
-                </p>
-
-                {/* Tech Stack */}
-                <div className="flex flex-wrap text-black gap-2 mt-5">
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="text-sm rounded-full border border-white/10 px-3 py-1 text-black"
+              <div className="relative h-64 w-full overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                  <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+                  <p className="text-sm text-neutral-300 mt-2">{project.description}</p>
+                  {/* Tech Stack */}
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {project.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="text-xs rounded bg-white/10 px-2 py-1 text-neutral-200"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  {/* Links */}
+                  <div className="flex gap-4 mt-4">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      className="inline-flex items-center gap-1 text-sm text-white hover:text-emerald-400 transition"
                     >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Actions */}
-                <div className="flex items-center text-black gap-4 mt-6">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    className="inline-flex items-center gap-2 text-sm text-neutral-800 hover:text-white transition"
-                  >
-                    <Github size={18} />
-                    Code
-                  </a>
-
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    className="inline-flex items-center gap-2 text-sm text-neutral-800 hover:text-white transition"
-                  >
-                    <ExternalLink size={18} />
-                    Live
-                  </a>
+                      <Github size={16} /> Code
+                    </a>
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      className="inline-flex items-center gap-1 text-sm text-white hover:text-cyan-400 transition"
+                    >
+                      <ExternalLink size={16} /> Live
+                    </a>
+                  </div>
                 </div>
               </div>
-
-              {/* Glow */}
-              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-90 transition pointer-events-none" />
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
