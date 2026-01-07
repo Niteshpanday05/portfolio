@@ -137,7 +137,7 @@ export const HeroSection = () => {
             className="size-[100px]"
             alt="person peaking from behind laptop"
           />
-          <div className="bg-gray-950 rounded-md border-gray-800 px-4 py-1.5 inline-flex items-center gap-4">
+          <div className="rounded-md border-gray-800 px-4 py-1.5 inline-flex items-center gap-4">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
             </div>
@@ -153,8 +153,8 @@ export const HeroSection = () => {
           <h1 className="font-serif mt-3 text-2xl  md:text-4xl text-center  tracking-wide">
             User Experience
           </h1>
-          <p className="mt-4 text-center font-sans text-white/70 text-sm md:text-md ">
-            {"I specialize in transforming design into functional, high-performancing web application. Let's discuss your next project."}
+          <p className="mt-4 text-center font-sans text-white/70 text-sm md:text-lg ">
+            {"I specialize in turning designs into high-performance, fully functional web applications. Ready to bring your next project to life?"}
            
           </p>
         </div>

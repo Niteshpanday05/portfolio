@@ -1,5 +1,5 @@
 import sajiloImg from "@/assets/images/sajilo2.jpg";
-import portfolioImg from "@/assets/images/portfolio1.jpg";
+import portfolioImg from "@/assets/images/portfolio1.jpg"
 import eventsImg from "@/assets/images/events.jpg";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -52,9 +52,9 @@ export const ProjectsSection = () => {
     <section className="pb-16 pt-16">
       <div className="container">
         <SectionHeader
-          eyebrow="Real WOrld Results"
+          eyebrow="Real World Results"
           title="  Featured Projects"
-          description=" You can see my concepts into digital experience"
+          description="Bringing ideas to life through digital experiences."
         />
 
         <div className=" flex flex-col mt-10 gap-20 md:mt-20">
