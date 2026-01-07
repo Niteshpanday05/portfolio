@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Phone, MapPin, Send, Sparkles } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -66,8 +66,9 @@ export default function ContactForm() {
             </div>
           </h2>
           <p className="mt-4 text-neutral-400 max-w-2xl mx-auto">
-            I’m a passionate web developer focused on building fast, modern, and
-            scalable applications. Let’s turn your idea into reality.
+            {
+              "I'm a passionate web developer focused on building fast, modern, and scalable applications. Let's turn your idea into reality."
+            }
           </p>
         </motion.div>
 

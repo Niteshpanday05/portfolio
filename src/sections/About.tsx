@@ -9,7 +9,6 @@ import HTMLIcon from "@/assets/icons/html5.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import CssIcon from "@/assets/icons/css3.svg";
 import GithubIcon from "@/assets/icons/github.svg";
-import ChromeIcon from "@/assets/icons/chrome.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";

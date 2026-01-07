@@ -1,5 +1,5 @@
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import Link from "next/link";
+
+
 import { FaGithub, FaLinkedin} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";

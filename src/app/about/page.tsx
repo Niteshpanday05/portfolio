@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profile from "@/assets/images/profile.jpeg";
+
 
 export default function AboutPage() {
   return (
