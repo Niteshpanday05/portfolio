@@ -5,6 +5,14 @@ import Image from "next/image";
 import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
+   {
+    title: "Sajilo Order",
+    description: "A food delivery service web app using modern framework like reactjs Nextjs and Tailwind.",
+    tech: ["Next.js", "Tailwind", "Recharts"],
+    github: "https://github.com/sajiloorder/website.git",
+    live: "#",
+    image: "/projects/sajilo2.jpg",
+  },
   {
     title: "Portfolio Website",
     description: "Modern developer portfolio with animations and clean UI.",
@@ -19,16 +27,9 @@ const projects = [
     tech: ["Next.js", "Redux", "Stripe"],
     github: "https://github.com/yourusername/ecommerce",
     live: "#",
-    image: "/projects/feature1.jpg",
+    image: "/projects/port.jpeg",
   },
-  {
-    title: "Sajilo Order",
-    description: "A food delivery service web app using modern framework like reactjs Nextjs and Tailwind.",
-    tech: ["Next.js", "Tailwind", "Recharts"],
-    github: "https://github.com/sajiloorder/website.git",
-    live: "#",
-    image: "/projects/sajilo2.jpg",
-  },
+ 
   {
     title: "pcoming Events",
     description: "A website showing upcoming events using modern framework and styling.",
@@ -43,7 +44,7 @@ const projects = [
     tech: ["Next.js", "Tailwind", "Recharts"],
     github: "https://github.com/yourusername/dashboard",
     live: "#",
-    image: "/projects/sajilo1.jpg",
+    image: "/projects/sajilo12.jpeg",
   },
   {
     title: "Dashboard UI",
