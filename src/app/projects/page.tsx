@@ -19,7 +19,7 @@ const projects = [
     tech: ["Next.js", "Redux", "Stripe"],
     github: "https://github.com/yourusername/ecommerce",
     live: "#",
-    image: "/projects/features.jpg",
+    image: "/projects/feature1.jpg",
   },
   {
     title: "Sajilo Order",
@@ -43,7 +43,7 @@ const projects = [
     tech: ["Next.js", "Tailwind", "Recharts"],
     github: "https://github.com/yourusername/dashboard",
     live: "#",
-    image: "/projects/sajilo.jpg",
+    image: "/projects/sajilo1.jpg",
   },
   {
     title: "Dashboard UI",
@@ -55,7 +55,7 @@ const projects = [
   },
 ];
 
-/* ---------------- Animations ---------------- */
+
 const container = {
   hidden: {},
   show: { transition: { staggerChildren: 0.2 } },

@@ -1,6 +1,4 @@
-/* import sajiloImg from "@/assets/images/sajilo2.jpg";
-import portfolioImg from "@/assets/images/portfolio1.jpg"
-import eventsImg from "@/assets/images/events.jpg"; */
+
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
