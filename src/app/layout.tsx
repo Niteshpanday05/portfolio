@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
-
+import { Header } from "@/sections/Header";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
@@ -13,7 +13,8 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "Nitesh",
-  description: "A portfolio website using Nextjs, Typescripts, and Tailwind CSS.",
+  description:
+    "A portfolio website using Nextjs, Typescripts, and Tailwind CSS.",
 };
 
 export default function RootLayout({
@@ -24,17 +25,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-         
         className={twMerge(
           inter.variable,
           calistoga.variable,
           "bg-gray-900 text-white antialiased font-sans"
         )}
       >
-        
-        {children}
+
+          <Header  />
+        <main>{children}</main>
       </body>
     </html>
   );
 }
-

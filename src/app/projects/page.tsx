@@ -72,7 +72,7 @@ const item = {
 
 export default function ProjectsResponsive() {
   return (
-    <section id="projects" className="py-24 gap-6 bg-gray-800">
+    <section id="projects" className="py-24 gap-6 bg-gray-900">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <motion.div
