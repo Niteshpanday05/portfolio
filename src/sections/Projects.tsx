@@ -1,6 +1,6 @@
-import sajilo2 from "@/assets/images/sajilo2.jpg";
-import portfolio1 from "@/assets/images/portfolio1.jpg";
-import events from "@/assets/images/events.jpg";
+import sajiloImg from "@/assets/images/sajilo2.jpg";
+import portfolioImg from "@/assets/images/portfolio1.jpg";
+import eventsImg from "@/assets/images/events.jpg";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -19,7 +19,7 @@ const portfolioProjects = [
     ],
     link: "https://github.com/sajiloorder/website.git",
 
-    image: sajilo2,
+    image: sajiloImg,
   },
   {
     company: "Portfolio",
@@ -31,7 +31,7 @@ const portfolioProjects = [
       { title: "Attractive and Engaging" },
     ],
     link: "https://github.com/Niteshpanday05/portfolio.git",
-    image: portfolio1,
+    image: portfolioImg,
   },
   {
     company: " Events",
@@ -43,7 +43,7 @@ const portfolioProjects = [
       { title: "Increased perfomance" },
     ],
     link: "https://github.com/Niteshpanday05/events.git",
-    image: events,
+    image: eventsImg,
   },
 ];
 
