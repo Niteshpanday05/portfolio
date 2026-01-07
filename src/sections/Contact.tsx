@@ -1,5 +1,6 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import Link from "next/link";
 
 export const ContactSection = () => {
   return (
@@ -16,20 +17,19 @@ export const ContactSection = () => {
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
             <div className="">
               <h2 className="font-serif text-2xl md:text-3xl">
-               <p>{"Let's work together on your next project"}</p>
-
+                <p>{"Let's work together on your next project"}</p>
               </h2>
               <p className="text-sm  md:text-base mt-2 ">
-                Ready to bring your next project to life? Let:s connect and
-                discuss how I can help you achieve your goals.
+               {" Ready to bring your next project to life? Let's connect and discuss how I can help you achieve your goals."}
               </p>
             </div>
             <div>
-              <button className="text-white bg-gray-900 inline-flex items-center 
-              gap-2 px-6 h-12  border border-gray-900 rounded-xl mt-8 w-max">
-                <span className="font-semibold ">Contact Me</span>
-                <ArrowUpRightIcon className="size-4" />
-              </button>
+              <Link href="/contact">
+                <button className="text-white bg-gray-900 inline-flex items-center gap-2 px-6 h-12 border border-gray-900 rounded-xl mt-8 w-max">
+                  <span className="font-semibold">Contact Me</span>
+                  <ArrowUpRightIcon className="size-4" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

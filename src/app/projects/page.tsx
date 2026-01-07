@@ -14,12 +14,12 @@ const projects = [
     image: "/projects/portfolio1.JPG",
   },
   {
-    title: "E-commerce Store",
-    description: "Full-stack online store with cart, auth, and checkout.",
+    title: "Interactive Features ",
+    description: "User engaging features using modern Nextjs libraries and tailwind.",
     tech: ["Next.js", "Redux", "Stripe"],
     github: "https://github.com/yourusername/ecommerce",
     live: "#",
-    image: "/projects/profile.jpeg",
+    image: "/projects/features.JPG",
   },
   {
     title: "Sajilo Order",
@@ -72,7 +72,8 @@ const item = {
 
 export default function ProjectsResponsive() {
   return (
-    <section id="projects" className="py-24 gap-6 bg-gray-900">
+    <section id="projects" className="py-24 gap-6 bg-gray-900
+    ">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <motion.div

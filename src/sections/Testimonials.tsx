@@ -29,7 +29,7 @@ const testimonials = [
   {
     name: "Nadia Cluaded",
     position: "CEo at Zaaou",
-    text: "Nitesh ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    text: "Nitesh ability to create positive environment is great. He collaborated with app developer to make our webapp fully working. We are thankfull for his contribution.",
     avatar: memojiAvatar3,
   },
  

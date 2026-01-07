@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import sajilo2 from "@/assets/images/sajilo2.jpg";
+import portfolio1 from "@/assets/images/portfolio1.jpg";
+import events from "@/assets/images/events.jpg";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -10,40 +10,40 @@ import { Card } from "@/components/Card";
 const portfolioProjects = [
   {
     company: "Sajiloorder.com",
-    year: "2022",
+    year: "2024",
     title: "Sajilo Order",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Fast performance with modern tech (Next.js, APIs)" },
+      { title: "Automates order processing" },
+      { title: "Faster and secure checkout" },
     ],
     link: "https://github.com/sajiloorder/website.git",
 
-    image: darkSaasLandingPage,
+    image: sajilo2,
   },
   {
-    company: "NOZEELA",
-    year: "2021",
-    title: "Ecommerce WebApp",
+    company: "Portfolio",
+    year: "2025",
+    title: "Personal Portfolio",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Responsive website using modern features" },
+      { title: "Clean structure and faster loading" },
+      { title: "Attractive and Engaging" },
     ],
-    link: "https://github.com/Niteshpanday05/NOZEELA",
-    image: lightSaasLandingPage,
+    link: "https://github.com/Niteshpanday05/portfolio.git",
+    image: portfolio1,
   },
   {
-    company: "Balmeeki School",
+    company: " Events",
     year: "2023",
-    title: "School Management System",
+    title: "Upcoming Website",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Enhanced user experience " },
+      { title: "Modern features and attractive UI" },
+      { title: "Increased perfomance" },
     ],
-    link: "https://github.com/Niteshpanday05/school-management",
-    image: aiStartupLandingPage,
+    link: "https://github.com/Niteshpanday05/events.git",
+    image: events,
   },
 ];
 
