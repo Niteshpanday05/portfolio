@@ -43,7 +43,7 @@ const projects = [
     tech: ["Next.js", "Tailwind", "Recharts"],
     github: "https://github.com/yourusername/dashboard",
     live: "#",
-    image: "/projects/sajilo1.JPG",
+    image: "/projects/sajilo.JPG",
   },
   {
     title: "Dashboard UI",
