@@ -1,6 +1,6 @@
-import sajiloImg from "@/assets/images/sajilo2.jpg";
+/* import sajiloImg from "@/assets/images/sajilo2.jpg";
 import portfolioImg from "@/assets/images/portfolio1.jpg"
-import eventsImg from "@/assets/images/events.jpg";
+import eventsImg from "@/assets/images/events.jpg"; */
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -19,7 +19,7 @@ const portfolioProjects = [
     ],
     link: "https://github.com/sajiloorder/website.git",
 
-    image: sajiloImg,
+    image: "/projects/sajilo2.jpg",
   },
   {
     company: "Portfolio",
@@ -31,7 +31,7 @@ const portfolioProjects = [
       { title: "Attractive and Engaging" },
     ],
     link: "https://github.com/Niteshpanday05/portfolio.git",
-    image: portfolioImg,
+    image: "/projects/portfolio1.jpg",
   },
   {
     company: " Events",
@@ -43,7 +43,7 @@ const portfolioProjects = [
       { title: "Increased perfomance" },
     ],
     link: "https://github.com/Niteshpanday05/events.git",
-    image: eventsImg,
+    image: "/projects/events.jpg",
   },
 ];
 
@@ -100,6 +100,8 @@ export const ProjectsSection = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
+                    width={600}
+                    height={400}
                     className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                   />
                 </div>
