@@ -43,7 +43,7 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://github.com/Niteshpanday05/NOZEELA",
+    link: "https://github.com/Niteshpanday05/school-management",
     image: aiStartupLandingPage,
   },
 ];
