@@ -11,7 +11,7 @@ const projects = [
     tech: ["Next.js", "Tailwind", "Framer Motion"],
     github: "https://github.com/yourusername/portfolio",
     live: "https://yourportfolio.vercel.app",
-    image: "/projects/portfolio1.JPG",
+    image: "/projects/portfolio1.jpg",
   },
   {
     title: "Interactive Features ",
@@ -19,7 +19,7 @@ const projects = [
     tech: ["Next.js", "Redux", "Stripe"],
     github: "https://github.com/yourusername/ecommerce",
     live: "#",
-    image: "/projects/features.JPG",
+    image: "/projects/features.jpg",
   },
   {
     title: "Sajilo Order",
@@ -27,7 +27,7 @@ const projects = [
     tech: ["Next.js", "Tailwind", "Recharts"],
     github: "https://github.com/sajiloorder/website.git",
     live: "#",
-    image: "/projects/sajilo2.JPG",
+    image: "/projects/sajilo2.jpg",
   },
   {
     title: "pcoming Events",
@@ -35,7 +35,7 @@ const projects = [
     tech: ["Next.js", "Tailwind", "Recharts"],
     github: "https://github.com/Niteshpanday05/events.git",
     live: "#",
-    image: "/projects/events.JPG",
+    image: "/projects/events.jpg",
   },
   {
     title: "Dashboard UI",
@@ -43,7 +43,7 @@ const projects = [
     tech: ["Next.js", "Tailwind", "Recharts"],
     github: "https://github.com/yourusername/dashboard",
     live: "#",
-    image: "/projects/sajilo.JPG",
+    image: "/projects/sajilo.jpg",
   },
   {
     title: "Dashboard UI",
