@@ -85,8 +85,7 @@ export default function ContactForm() {
               Contact Information
             </h3>
             <p className="text-neutral-400 mb-8">
-              Prefer direct communication? Reach out via email or phone and I’ll
-              respond as soon as possible.
+              {"Prefer direct communication? Reach out via email or phone and I’ll respond as soon as possible."}
             </p>
 
             <div className="space-y-3 text-neutral-300">
