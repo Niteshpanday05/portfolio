@@ -30,7 +30,7 @@ const socialLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="relative pb-20  overflow-x-clip">
+    <footer className="relative pb-16 pt-6 overflow-x-clip">
       <div
         className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 
       -translate-x-1/2 bg-emerald-300/30
@@ -40,7 +40,7 @@ export const Footer = () => {
       </div>
 
       <div className="container">
-        <div className="border-t border-white/60 py-8 text-sm flex flex-col md:flex-col md:justify-between items-center gap-6">
+        <div className="border-t border-white/60 py-6 text-sm flex flex-col md:flex-col md:justify-between items-center gap-6">
           <p className="text-white/60 ">
             © {new Date().getFullYear()} Nitesh Panday. All rights reserved.
           </p>

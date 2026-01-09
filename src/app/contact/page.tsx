@@ -46,13 +46,13 @@ export default function ContactForm() {
       className="relative overflow-hidden py-12 px-4 bg-gray-900 text-white"
     >
       {/* Decorative Gradients */}
-      <div className="absolute -top-32-black/60 -left-32 h-96 w-96 -z-10 rounded-full bg-emerald-500/20 blur-3xl" />
-      <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-indigo-500/20 blur-3xl" />
+      {/* <div className="absolute   h-96 w-96 -z-10 rounded-full bg-emerald-500/20 blur-3xl" />
+      <div className="absolute  h-96 w-96 rounded-full bg-indigo-500/20 blur-3xl" /> */}
 
       <div className="relative max-w-5xl mx-auto">
         {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y:20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
