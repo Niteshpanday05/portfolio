@@ -148,10 +148,10 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-2xl  md:text-4xl text-center mt-6 tracking-wide">
-            Building Exceptional
+           {" Hi, I'm Nitesh Panday"}
           </h1>
           <h1 className="font-serif mt-3 text-2xl  md:text-4xl text-center  tracking-wide">
-            User Experience
+            A full Stack Web Developer.
           </h1>
           <p className="mt-4 text-center font-sans text-white/70 text-sm md:text-lg ">
             {"I specialize in turning designs into high-performance, fully functional web applications. Ready to bring your next project to life?"}
