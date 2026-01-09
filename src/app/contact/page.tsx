@@ -52,7 +52,7 @@ export default function ContactForm() {
       <div className="relative max-w-5xl mx-auto">
         {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y:20 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -164,12 +164,18 @@ export default function ContactForm() {
         </div>
         {success && (
           <div
-            className={`fixed top-5 left-1/2 -translate-x-1/2 z-[9999]
-                px-6 py-3 rounded-lg shadow-lg font-medium
+            className={`fixed top-4 right-4 md:top-10 md:right-10 z-[9999]
+                inline-flex items-center gap-2
+                px-4 py-2 rounded-md
+                bg-white text-gray-900
+                border border-gray-200
+                shadow-sm
+                hover:bg-gray-100
+                transition-colors duration-200
               ${
                 success.includes("Failed")
                   ? "bg-red-500 text-white"
-                  : "bg-emerald-500 text-black"
+                  : "bg-white/90 text-black text-sm"
               }`}
           >
             {success}
