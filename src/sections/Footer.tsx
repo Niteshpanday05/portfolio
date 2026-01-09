@@ -52,7 +52,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={title}
-                className=" z-50 inline-flex items-center text-gray-200 hover:text-emerald-600 transition hover:scale-110"
+                className=" z-50 inline-flex items-center text-gray-200 hover:text-sky-400 transition hover:scale-110"
               >
                 <Icon className="size-4" />
               </a>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import memojiImage from "@/assets/images/memoji-computer.png";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
@@ -9,7 +8,7 @@ import Link from "next/link";
 
 export const HeroSection = () => {
   return (
-    <div className="py-28 md:py-30 lg:py-36 relative z-0 overflow-x-clip">
+    <div className="py-20 md:py-30 lg:py-36 relative z-0 overflow-x-clip">
       <div className="absolute pointer-events-none inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -17,7 +16,7 @@ export const HeroSection = () => {
             backgroundImage: `url(${grainImage.src})`,
           }}
         ></div>
-        <div className=" size-[640px] hero-ring"></div>
+        <div className=" size-[660px] hero-ring"></div>
         <div className=" size-[760px] hero-ring"></div>
         <div className=" size-[860px] hero-ring"></div>
         <div className=" size-[960px] hero-ring"></div>
@@ -132,12 +131,26 @@ export const HeroSection = () => {
 
       <div className="container">
         <div className="flex flex-col items-center">
-          <Image
-            src={memojiImage}
-            className="size-[100px]"
+          {/* <Image
+            src={logo}
+            className="size-[90px] bg-gray-800"
             alt="person peaking from behind laptop"
-          />
-          <div className="rounded-md border-gray-800 px-4 py-1.5 inline-flex items-center gap-4">
+          /> */}
+          
+        </div>
+        <div className="max-w-lg mx-auto">
+           <h1 className="font-serif text-3xl  md:text-4xl text-center mt-2 tracking-wide">
+           {"Hy!!"}
+          </h1>
+          
+          <h1 className="font-serif text-3xl  md:text-4xl text-center mt-2 tracking-wide">
+           {"I'm "}
+           <span className="bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent">Nitesh Panday</span>
+          </h1>
+          <h1 className="font-serif mt-2 text-3xl  md:text-4xl text-center  tracking-wide">
+            A full Stack Web App Developer
+          </h1>
+          <div className="rounded-md border-gray-800 px-4 py-4 flex items-center justify-center gap-3">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
             </div>
@@ -145,24 +158,16 @@ export const HeroSection = () => {
               Available for new projects
             </div>
           </div>
-        </div>
-        <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-2xl  md:text-4xl text-center mt-6 tracking-wide">
-           {" Hi, I'm Nitesh Panday"}
-          </h1>
-          <h1 className="font-serif mt-3 text-2xl  md:text-4xl text-center  tracking-wide">
-            A full Stack Web Developer.
-          </h1>
-          <p className="mt-4 text-center font-sans text-white/70 text-sm md:text-lg ">
-            {"I specialize in turning designs into high-performance, fully functional web applications. Ready to bring your next project to life?"}
+          <p className="mt-1 text-center font-sans text-white/70 text-sm md:text-lg ">
+            {"I specialize in turning designs and ideas into fully functional modern web applications. Ready to bring your next project to life?"}
            
           </p>
         </div>
 
-        <div className="flex flex-col  md:flex-row justify-center items-center mt-8 gap-4">
+        <div className="flex flex-col   justify-center items-center mt-6 gap-3">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
+            className="inline-flex text-sm items-center hover:bg-gradient-to-r from-emerald-300 to-sky-400  hover:text-black gap-2 border border-white/15 px-3 h-10 rounded-lg"
           >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
@@ -170,12 +175,15 @@ export const HeroSection = () => {
 
           <Link
             href="/contact"
-            className="inline-flex items-center  gap-2 bg-white border border-white text-gray-900 h-12 px-6 rounded-xl"
+             className="inline-flex text-sm items-center hover:bg-gradient-to-r from-emerald-300 to-sky-400 hover:text-black gap-2 border border-white/15 px-3 h-10 rounded-lg"
           >
-            <span className="">👋</span>
+            {/* <span className="">👋</span> */}
             <span className="font-semibold">{"Let's Connect"}</span>
           </Link>
+          
         </div>
+       
+
       </div>
     </div>
   );
