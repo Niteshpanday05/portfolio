@@ -160,8 +160,8 @@ export const HeroSection = () => {
             </div>
           </div>
          
-          <p className="mt-1 p-1.5 text-center font-sans text-white/70 text-sm md:text-lg ">
-                <TypingEffect/>
+          <p className=" text-center font-sans text-white/70 text-sm md:text-lg ">
+               { "I specialize in turning designs and ideas into fully functional modern web applications. Ready to bring your next project to life?"}
           </p>
         </div>
 

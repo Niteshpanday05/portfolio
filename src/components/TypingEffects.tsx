@@ -8,7 +8,7 @@ export default function TypingEffect() {
       <span className="">
         <Typewriter
           words={[
-            "I specialize in turning designs and ideas into fully functional modern web applications. Ready to bring your next project to life?",
+           "Hy",
           ]}
           loop
           cursor
