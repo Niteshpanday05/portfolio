@@ -5,6 +5,7 @@ import StarIcon from "@/assets/icons/star.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import Link from "next/link";
+import TypingEffect from "@/components/TypingEffects";
 
 export const HeroSection = () => {
   return (
@@ -158,6 +159,7 @@ export const HeroSection = () => {
               Available for new projects
             </div>
           </div>
+         
           <p className="mt-1 text-center font-sans text-white/70 text-sm md:text-lg ">
             {"I specialize in turning designs and ideas into fully functional modern web applications. Ready to bring your next project to life?"}
            

@@ -43,7 +43,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden py-12 px-4 bg-gray-900 text-white"
+      className="relative overflow-hidden py-10 px-2 bg-gray-900 text-white"
     >
       {/* Decorative Gradients */}
       {/* <div className="absolute   h-96 w-96 -z-10 rounded-full bg-emerald-500/20 blur-3xl" />
@@ -52,10 +52,10 @@ export default function ContactForm() {
       <div className="relative max-w-5xl mx-auto">
         {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y:20  }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
           className="text-center mb-14"
         >
           <h2 className="mt-2 text-2xl md:text-3xl font-extrabold tracking-tight">
@@ -78,7 +78,7 @@ export default function ContactForm() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.8 }}
             className="relative rounded-2xl border border-emerald-100 bg-white/5 p-10 backdrop-blur-xl"
           >
             <h3 className="text-2xl flex items-center justify-center font-semibold mb-4">
@@ -120,7 +120,7 @@ export default function ContactForm() {
             className="relative rounded-3xl border border-emerald-100 bg-gradient-to-br from-white/10 to-white/5 p-10 backdrop-blur-xl"
           >
             <div className="grid gap-5">
-              <h3 className="text-2xl font-semibold flex justify-center text-white p-2 mb-2">
+              <h3 className="text-2xl font-semibold flex justify-center text-white  mb-2">
                 Contact Me
               </h3>
 
