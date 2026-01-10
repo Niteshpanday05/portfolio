@@ -4,6 +4,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { X } from "lucide-react";
+import { CiMenuFries } from "react-icons/ci";
+import { IoMenuOutline } from "react-icons/io5";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -25,7 +27,7 @@ export const Header = () => {
                     backdrop-blur text-bl transition active:scale-95"
         aria-label="Toggle Menu"
       >
-        {open ? <X size={26} /> : <BiMenuAltRight size={28} />}
+        {open ? <X size={26} /> : <BiMenuAltRight  size={28} />}
       </button>
 
       {/* Desktop Navbar */}
