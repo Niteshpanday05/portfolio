@@ -4,21 +4,18 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function TypingEffect() {
   return (
-    <h2 className="text-lg md:text-2xl font-semibold items-center justify-center flex text-white mt-4">
-      
-      <span className="text-gray-200">
+    <h2 className="">
+      <span className="">
         <Typewriter
           words={[
-            "Modern web apps",
-            "Scalable solutions",
-            "Beautiful interfaces",
+            "I specialize in turning designs and ideas into fully functional modern web applications. Ready to bring your next project to life?",
           ]}
           loop
           cursor
-          cursorStyle=""
+          cursorStyle="|"
           typeSpeed={80}
-          deleteSpeed={50}
-          delaySpeed={1500}
+          deleteSpeed={40}
+          delaySpeed={1400}
         />
       </span>
     </h2>
