@@ -20,7 +20,7 @@ export const Header = () => {
 
   return (
     <>
-      {/* Hamburger Button (Top-Right, Mobile Only) */}
+      
       <button
         onClick={() => setOpen(!open)}
         className="fixed top-4 right-4 z-[9999] md:hidden p-2 rounded-full
@@ -30,11 +30,11 @@ export const Header = () => {
         {open ? <X size={26} /> : <BiMenuAltRight  size={28} />}
       </button>
 
-      {/* Desktop Navbar */}
-      <div className="sticky top-3 z-50 flex justify-center items-center w-full">
+      
+      <div className="sticky top-3 flex-shrink-0 z-50 md:h-16 flex justify-center items-center w-full">
         <nav className="relative flex gap-2 md:gap-6 p-0.5 border border-white/15
-                        rounded-full bg-white/10 backdrop-blur">
-          {/* Desktop Links */}
+                        rounded-full  bg-white/10 backdrop-blur">
+          
           <div className="hidden md:flex">
             <Link href="/" className={linkClass("/")}>
               Home

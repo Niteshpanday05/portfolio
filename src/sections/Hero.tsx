@@ -9,7 +9,7 @@ import TypingEffect from "@/components/TypingEffects";
 
 export const HeroSection = () => {
   return (
-    <div className="py-20 md:py-30 lg:py-36 relative z-0 overflow-x-clip">
+    <div className="py-20  md:py-30 lg:py-36 relative z-0 overflow-x-clip">
       <div className="absolute pointer-events-none inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
