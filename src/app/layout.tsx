@@ -32,10 +32,10 @@ export default function RootLayout({
           "bg-gray-900 text-white antialiased font-sans"
         )}
       >
-        <div className="h-16">
+        <div className="">
           <Header />
         </div>
-        <main className="pt-16">{children}</main>
+        <main className="pt-14 md:pt-16">{children}</main>
         <Footer />
       </body>
     </html>
