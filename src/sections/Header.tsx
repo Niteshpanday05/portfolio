@@ -31,8 +31,9 @@ export const Header = () => {
       </button>
 
       
-      <div className="sticky top-3 z-50 flex justify-center h-10 items-center">
-        <nav className="h-full flex items-center gap-6 rounded-full px-6 bg-white/10 backdrop-blur-md border border-white/15 shadow-lg">
+      <div className="sticky top-3 flex-shrink-0 z-50 md:h-16 flex justify-center items-center w-full">
+        <nav className="relative flex gap-2 md:gap-6 p-0.5 border border-white/15
+                        rounded-full  bg-white/10 backdrop-blur">
           
           <div className="hidden md:flex">
             <Link href="/" className={linkClass("/")}>
