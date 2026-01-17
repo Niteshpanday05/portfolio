@@ -27,8 +27,8 @@ export default function FloatingBackButton() {
       className={`
         fixed top-6 left-6 z-50 
        
-     text-sky-400
-     hover:text-white hidden
+     text-white
+     hover:text-sky-400 hidden
         md:flex items-center justify-center
         shadow-lg
         transition-all duration-300
