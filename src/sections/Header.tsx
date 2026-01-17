@@ -20,21 +20,23 @@ export const Header = () => {
 
   return (
     <>
-      
       <button
         onClick={() => setOpen(!open)}
         className="fixed top-4 right-4 z-[9999] md:hidden p-2 rounded-full
                     backdrop-blur text-bl transition active:scale-95"
         aria-label="Toggle Menu"
       >
-        {open ? <X size={26} /> : <BiMenuAltRight  size={28} />}
+        {open ? <X size={26} /> : <BiMenuAltRight size={28} />}
       </button>
 
-      
-      <div className="sticky  top-3  z-50  flex justify-center items-center">
-        <nav className="flex gap-4 md:gap-6 p-0.5 border border-white/15
-                        rounded-full  bg-white/10 backdrop-blur">
-          
+      <div
+        className=" relative top-3 z-50 flex justify-center w-full
+"
+      >
+        <nav
+          className="flex gap-4 md:gap-6 p-0.5 border border-white/15
+                        rounded-full  bg-white/10 backdrop-blur"
+        >
           <div className="hidden md:flex">
             <Link href="/" className={linkClass("/")}>
               Home
@@ -54,13 +56,14 @@ export const Header = () => {
 
       {/* Full-Screen Mobile Menu */}
       {open && (
-       <div className="fixed inset-0 z-[9998] bg-black/20 backdrop-blur-md
-                flex flex-col items-center justify-center md:hidden">
-  {/* Mobile Links */}
-
+        <div
+          className="fixed inset-0 z-[9998] bg-black/20 backdrop-blur-md
+                flex flex-col items-center justify-center md:hidden"
+        >
+          {/* Mobile Links */}
 
           {/* Optional Close Button */}
-         {/*  <button
+          {/*  <button
             onClick={() => setOpen(false)}
             className="absolute top-6 right-6 text-black text-3xl"
           >
@@ -69,16 +72,32 @@ export const Header = () => {
 
           {/* Mobile Links */}
           <div className="flex flex-col items-center gap-10">
-            <Link href="/" onClick={() => setOpen(false)} className="  bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl hover:opacity-90">
+            <Link
+              href="/"
+              onClick={() => setOpen(false)}
+              className="  bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl hover:opacity-90"
+            >
               Home
             </Link>
-            <Link href="/projects" onClick={() => setOpen(false)} className=" bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl">
+            <Link
+              href="/projects"
+              onClick={() => setOpen(false)}
+              className=" bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl"
+            >
               Projects
             </Link>
-            <Link href="/about" onClick={() => setOpen(false)} className=" bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl">
+            <Link
+              href="/about"
+              onClick={() => setOpen(false)}
+              className=" bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl"
+            >
               About
             </Link>
-            <Link href="/contact" onClick={() => setOpen(false)} className=" bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl">
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className=" bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl"
+            >
               Contact
             </Link>
           </div>
