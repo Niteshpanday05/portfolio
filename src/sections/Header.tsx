@@ -31,8 +31,8 @@ export const Header = () => {
       </button>
 
       
-      <div className="sticky top-3 flex-shrink-0 z-50 md:h-16 flex justify-center items-center w-full">
-        <nav className="relative flex gap-2 md:gap-6 p-0.5 border border-white/15
+      <div className="sticky  top-3  z-50  flex justify-center items-center">
+        <nav className="flex gap-4 md:gap-6 p-0.5 border border-white/15
                         rounded-full  bg-white/10 backdrop-blur">
           
           <div className="hidden md:flex">
@@ -69,7 +69,7 @@ export const Header = () => {
 
           {/* Mobile Links */}
           <div className="flex flex-col items-center gap-10">
-            <Link href="/" onClick={() => setOpen(false)} className=" bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl hover:opacity-90">
+            <Link href="/" onClick={() => setOpen(false)} className="  bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl hover:opacity-90">
               Home
             </Link>
             <Link href="/projects" onClick={() => setOpen(false)} className=" bg-gradient-to-r from-emerald-300 to-sky-400  bg-clip-text text-transparent hover:text-white text-xl">

@@ -4,6 +4,7 @@ import "./globals.css";
 import { twMerge } from "tailwind-merge";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
+import FloatingBackButton from "@/components/BackButton";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
@@ -35,7 +36,9 @@ export default function RootLayout({
         <div className="">
           <Header />
         </div>
-        <main className="pt-[76px]">{children}</main>
+        <FloatingBackButton />
+        <main className="">{children}</main>
+         <FloatingBackButton />
         <Footer />
       </body>
     </html>
